@@ -5,20 +5,23 @@ import java.io.File
 fun main() {
     // a readonly array of arrays of calories
     val elves = getInputFromFileContents()
+    val totals = mutableListOf<Int>()
 
-    var currentMost = 0
-    var currentElf = 0
-
-    for ((idx, elf) in elves.withIndex()) {
-        val elfTotal = getElfTotal(elf)
-        println("Elf ${idx + 1} has ${getElfTotal(elf)} calories")
-        if (elfTotal > currentMost) {
-            currentMost = elfTotal
-            currentElf = idx
-        }
+    // for each array of calories
+    elves.forEach { elf ->
+        totals.add(getElfTotal(elf))
     }
 
-    println("The elf with the most calories is elf ${currentElf + 1} with $currentMost calories")
+    println("Total calories: $totals")
+
+    // find the top 3 totals
+    val top3 = totals.sortedDescending().take(3)
+    println("Top 3 totals: $top3")
+
+    // add them together
+    val result = top3.sum()
+
+    println("The top three elves have a total of $result calories")
 }
 
 fun getElfTotal(elf: MutableList<Int>): Int {
