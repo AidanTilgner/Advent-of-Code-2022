@@ -1,7 +1,12 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    // a readonly array of arrays of calories
+    val calories = arrayOf(
+        arrayOf(1000, 2000, 3000),
+        arrayOf(4000),
+        arrayOf(5000, 6000),
+        arrayOf(7000, 8000, 9000),
+        arrayOf(10000)
+    )
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+
 }
