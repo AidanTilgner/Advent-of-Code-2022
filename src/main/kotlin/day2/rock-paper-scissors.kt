@@ -1,6 +1,7 @@
 package day2
 
 import java.io.File
+
 fun main() {
     // GOAL: What would your total score be if everything goes exactly according to your strategy guide?
     val scores = getInputFromFileContents()
@@ -23,7 +24,7 @@ fun getInputFromFileContents(): MutableList<Int> {
 
     val scores = mutableListOf<Int>()
 
-    if(lines.isNotEmpty()){
+    if (lines.isNotEmpty()) {
         lines.forEach { l ->
             val opponentMove = l[0]
             val playerMove = l[2]
@@ -45,29 +46,33 @@ fun getInputFromFileContents(): MutableList<Int> {
  * B = End in Tie
  * C = End in Win
  */
-fun getScoreForRound(op: Char, pl: Char): Int {
-    // op is either A, B, or C
-    // pl is either X, Y, or C
+fun getScoreForRound(opponentShape: Char, outcome: Char): Int {
+    // opponentShape is either A, B, or C
+    // pl is either X, Y, or Z
 
     val shapes = mapOf('R' to 1, 'P' to 2, 'S' to 3)
     val mapLetterToShape = mapOf(
         'A' to 'R',
         'B' to 'P',
         'C' to 'S',
-        'X' to 'R',
-        'Y' to 'P',
-        'Z' to 'S'
+    )
+    val mappedLetterToOutcome = mapOf(
+        'X' to 'L',
+        'Y' to 'D',
+        'Z' to 'W',
     )
 
-    val mappedOP = mapLetterToShape[op]
-    val mappedPL = mapLetterToShape[pl]
+    val necessaryOutcome = mappedLetterToOutcome[outcome]!!
+
+    val mappedOP = mapLetterToShape[opponentShape]!!
+    val choseShape = getShapeToMeetNecessaryOutcome(mappedOP, necessaryOutcome)
 
     // (0 if you lost, 3 if the round was a draw, and 6 if you won).
-    val score = if (mappedOP == mappedPL) {
+    val score = if (mappedOP == choseShape) {
         3
     } else {
         val opShape = shapes[mappedOP]
-        val plShape = shapes[mappedPL]
+        val plShape = shapes[choseShape]
 
         if (opShape == 1 && plShape == 3) {
             0
@@ -80,5 +85,27 @@ fun getScoreForRound(op: Char, pl: Char): Int {
         }
     }
 
-    return score + shapes[mappedPL]!!
+    return score + shapes[choseShape]!!
+}
+
+fun getShapeToMeetNecessaryOutcome(opponentAnswer: Char, necessaryOutcome: Char): Char {
+    var shape: Char = opponentAnswer
+
+    if (necessaryOutcome != 'D') {
+        if (necessaryOutcome == 'L') {
+            when (opponentAnswer) {
+                'R' -> shape = 'S'
+                'P' -> shape = 'R'
+                'S' ->  shape = 'P'
+            }
+        } else if (necessaryOutcome == 'W') {
+            when (opponentAnswer) {
+                'R' -> shape = 'P'
+                'P' -> shape = 'S'
+                'S' -> shape = 'R'
+            }
+        }
+    }
+
+    return shape
 }
