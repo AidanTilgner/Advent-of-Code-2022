@@ -41,9 +41,9 @@ fun getInputFromFileContents(): MutableList<Int> {
  * B = Paper
  * C = Scissors
  *
- * X = Rock
- * B = Paper
- * C = Scissors
+ * X = End in Loss
+ * B = End in Tie
+ * C = End in Win
  */
 fun getScoreForRound(op: Char, pl: Char): Int {
     // op is either A, B, or C

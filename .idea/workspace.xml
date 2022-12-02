@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Completed part 2 of day 1 that I didn't know about and now I'm tired">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day2/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" afterDir="false" />
+    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Completed day 2 part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day1/[Day_1]CalorieCounting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day1/CalorieCounting.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669975542268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed day 2 part 1">
+      <created>1669977354137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669977354137</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,6 +133,7 @@
     <MESSAGE value="Finished day 1 for real this time" />
     <MESSAGE value="Actually finished day 1 with the given input file" />
     <MESSAGE value="Completed part 2 of day 1 that I didn't know about and now I'm tired" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed part 2 of day 1 that I didn't know about and now I'm tired" />
+    <MESSAGE value="Completed day 2 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 2 part 1" />
   </component>
 </project>
