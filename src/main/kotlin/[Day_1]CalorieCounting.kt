@@ -8,5 +8,27 @@ fun main() {
         arrayOf(10000)
     )
 
+    var currentMost: Int = 0
+    var currentElf: Int = 0
 
+    for ((idx, elf) in calories.withIndex()) {
+        val elfTotal = getElfTotal(elf)
+        println("Elf ${idx + 1} has ${getElfTotal(elf)} calories")
+        if (elfTotal > currentMost) {
+            currentMost = elfTotal
+            currentElf = idx
+        }
+    }
+
+    println("The elf with the most calories is elf ${currentElf + 1} with ${currentMost} calories")
+}
+
+fun getElfTotal(elf: Array<Int>): Int {
+    var total: Int = 0
+
+    for (c in elf) {
+        total += c;
+    }
+
+    return total
 }
