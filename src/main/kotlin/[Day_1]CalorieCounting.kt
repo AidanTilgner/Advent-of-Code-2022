@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     // a readonly array of arrays of calories
     val calories = arrayOf(
         arrayOf(1000, 2000, 3000),
