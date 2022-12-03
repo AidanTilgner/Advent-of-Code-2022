@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Completed day 2 part 1">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="most recent changes">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day3/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day3/rucksack-reorganization.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669977354137</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="most recent changes">
+      <created>1670008516859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670008516859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,6 +142,7 @@
     <MESSAGE value="Actually finished day 1 with the given input file" />
     <MESSAGE value="Completed part 2 of day 1 that I didn't know about and now I'm tired" />
     <MESSAGE value="Completed day 2 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 2 part 1" />
+    <MESSAGE value="most recent changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="most recent changes" />
   </component>
 </project>
