@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="most recent changes">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day3/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day3/rucksack-reorganization.kt" afterDir="false" />
+    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Finished day 3">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/camp-cleanup.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670008516859</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished day 3">
+      <created>1670055321217</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670055321217</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +150,7 @@
     <MESSAGE value="Completed part 2 of day 1 that I didn't know about and now I'm tired" />
     <MESSAGE value="Completed day 2 part 1" />
     <MESSAGE value="most recent changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="most recent changes" />
+    <MESSAGE value="Finished day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished day 3" />
   </component>
 </project>
