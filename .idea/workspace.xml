@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Finished day 3">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/camp-cleanup.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/input.txt" afterDir="false" />
+    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="failed at day 5 part 2">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day5/initial-input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day5/initial-stack.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day5/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day5/supply-stacks.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670055321217</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished day 4">
+      <created>1670134507331</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670134507331</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +160,9 @@
     <MESSAGE value="Completed day 2 part 1" />
     <MESSAGE value="most recent changes" />
     <MESSAGE value="Finished day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished day 3" />
+    <MESSAGE value="Finished day 4" />
+    <MESSAGE value="Completed day 5 part 1" />
+    <MESSAGE value="failed at day 5 part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="failed at day 5 part 2" />
   </component>
 </project>
