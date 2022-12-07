@@ -1,0 +1,20 @@
+{
+  "name": "day7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "no-space-on-device.js",
+  "scripts": {
+    "test": "ts-node-dev no-space-on-device.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  }
+}

@@ -1,0 +1,47 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cf2e6b58-6a64-4902-8425-aca792c58f51\" name=\"Changes\" comment=\"Completed day 2 part 1\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Kotlin Class\" />\r\n        <option value=\"Kotlin File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"44486d51-8ea7-4b65-ba68-d6ac96701828\" />\r\n        <option name=\"url\" value=\"https://github.com/AidanTilgner/Advent-of-Code-2022.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ILnFWwzi8zfUT7bV3H7zxohlUF\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"preferences.sourceCode.Kotlin\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Coding\\advent-of-code-2022\\src\\main\\kotlin\\day1\" />\r\n      <recent name=\"C:\\Coding\\advent-of-code-2022\\src\\main\\kotlin\\Day1\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cf2e6b58-6a64-4902-8425-aca792c58f51\" name=\"Changes\" comment=\"\" />\r\n      <created>1669969631949</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1669969631949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Started project\">\r\n      <created>1669970608343</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669970608343</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Started project\">\r\n      <created>1669970635660</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669970635660</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Finished day 1\">\r\n      <created>1669971349053</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669971349053</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Finished day 1 for real this time\">\r\n      <created>1669971464388</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669971464388</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Actually finished day 1 with the given input file\">\r\n      <created>1669973954762</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669973954762</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Completed part 2 of day 1 that I didn't know about and now I'm tired\">\r\n      <created>1669975542268</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669975542268</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Completed day 2 part 1\">\r\n      <created>1669977354137</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669977354137</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Started project\" />\r\n    <MESSAGE value=\"Finished day 1\" />\r\n    <MESSAGE value=\"Finished day 1 for real this time\" />\r\n    <MESSAGE value=\"Actually finished day 1 with the given input file\" />\r\n    <MESSAGE value=\"Completed part 2 of day 1 that I didn't know about and now I'm tired\" />\r\n    <MESSAGE value=\"Completed day 2 part 1\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Completed day 2 part 1\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f82b626c63cc9e30ec92d08d135d4510efac93ec)
++++ b/.idea/workspace.xml	(date 1670051122575)
+@@ -4,9 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="Completed day 2 part 1">
++    <list default="true" id="cf2e6b58-6a64-4902-8425-aca792c58f51" name="Changes" comment="most recent changes">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day2/rock-paper-scissors.kt" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -124,7 +123,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1669977354137</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="most recent changes">
++      <created>1670008516859</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1670008516859</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+@@ -134,6 +140,7 @@
+     <MESSAGE value="Actually finished day 1 with the given input file" />
+     <MESSAGE value="Completed part 2 of day 1 that I didn't know about and now I'm tired" />
+     <MESSAGE value="Completed day 2 part 1" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 2 part 1" />
++    <MESSAGE value="most recent changes" />
++    <option name="LAST_COMMIT_MESSAGE" value="most recent changes" />
+   </component>
+ </project>
+\ No newline at end of file
