@@ -1,82 +1,95 @@
 import { readFileSync } from "fs";
 
-const movements = readFileSync("./test-input.txt").toString().split("\n");
+const movements = readFileSync("./input.txt").toString().split("\n");
 
-const positions: number[][] = [
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
-  [15, 15],
+const positions: { x: number; y: number }[] = [
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
+  { x: 250, y: 250 },
 ];
-const visited: number[][][] = [];
+const visited: { x: number; y: number }[][] = [];
 const visitedSpaces = new Set<string>();
 
 const moveHead = (direction: string, amount: number) => {
   let isNegative = false;
-  let toChange = 0;
+  let toChange: "x" | "y" = "x";
   switch (direction) {
     case "U":
       isNegative = false;
-      toChange = 0;
+      toChange = "y";
       break;
     case "D":
       isNegative = true;
-      toChange = 0;
+      toChange = "y";
       break;
     case "L":
       isNegative = true;
-      toChange = 1;
+      toChange = "x";
       break;
     case "R":
       isNegative = false;
-      toChange = 1;
+      toChange = "x";
       break;
   }
 
   for (let i = 0; i < amount; i++) {
     positions[0][toChange] += isNegative ? -1 : 1;
-    visited[0] = [...(visited[0] ? visited[0] : []), [...positions[0]]];
-    moveTail();
+    visited[0] = [...(visited[0] || []), { ...positions[0] }];
+    moveTail(1);
   }
 };
 
-const moveTail = () => {
-  // go through each tail position after the head
-  // if the tail node is not within 1 of the previous node in either direction, move it to where that node was last
+const moveTail = (index: number) => {
+  // recursively move through each item in the tail, passing the new position to the next one
+  // each time
+  // determine if the current node needs to move based on the parent node, and if so, move it
+  // and then call this function again with the new position
+  const node = positions[index];
 
-  for (let i = 1; i < positions.length; i++) {
-    const moveI = Math.abs(positions[i - 1][0] - positions[i][0]) > 1;
-    const moveJ = Math.abs(positions[i - 1][1] - positions[i][1]) > 1;
+  if (!node) {
+    return;
+  }
 
-    console.log("previous node current position: ", positions[i - 1]);
-    console.log("current node current position: ", positions[i]);
-    if (moveI || moveJ) {
-      console.log(
-        "Moving tail to: ",
-        visited[i - 1][visited[i - 1].length - 2]
-      );
-      const lastHead = visited[i - 1][visited[i - 1].length - 2];
-      positions[i] = [...lastHead];
-      visited[i] = [...(visited[i] ? visited[i] : []), [...lastHead]];
-      visitedSpaces.add(lastHead.join(","));
+  const parent = positions[index - 1];
+
+  const shouldMove =
+    Math.abs(parent.x - node.x) > 1 || Math.abs(parent.y - node.y) > 1;
+
+  if (shouldMove) {
+    if (parent.x > node.x) {
+      node.x++;
+    }
+    if (parent.x < node.x) {
+      node.x--;
+    }
+    if (parent.y > node.y) {
+      node.y++;
+    }
+    if (parent.y < node.y) {
+      node.y--;
     }
   }
 
-  visualize();
+  visited[index] = [...(visited[index] || []), { ...node }];
+  if (index === positions.length - 1) {
+    visitedSpaces.add(`${node.x},${node.y}`);
+  }
+  moveTail(index + 1);
 };
 
 const visualize = () => {
   // make an array of 20 rows, each with 20 columns
   const grid: string[][] = [];
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 40; i++) {
     grid.push([]);
-    for (let j = 0; j < 50; j++) {
+    for (let j = 0; j < 40; j++) {
       grid[i].push(".");
     }
   }
@@ -86,10 +99,10 @@ const visualize = () => {
   // mark the nodes
   positions.forEach((p, index) => {
     if (index === 0) {
-      grid[p[0]][p[1]] = "H";
+      grid[p.x][p.y] = "H";
       return;
     }
-    grid[p[0]][p[1]] = index.toString();
+    grid[p.x][p.y] = index.toString();
   });
 
   // reverse the arrays so that they're the opposite direction
@@ -110,4 +123,3 @@ movements.forEach((m) => {
 });
 
 console.log("total: ", visitedSpaces.size);
-console.log("Visited: ", visitedSpaces);
