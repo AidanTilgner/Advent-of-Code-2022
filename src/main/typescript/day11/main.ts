@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 
-const input = readFileSync("./test-input.txt").toString();
+const input = readFileSync("./input.txt").toString();
 const lines = input.split("\n");
 
 const startTime = new Date();
@@ -70,11 +70,6 @@ const superModulo = monkeys.reduce((acc, curr) => {
 }, 1);
 
 const inspections: { [key: number]: number } = {};
-
-const getSmallestCongruentModulo = (x: number, y: number) => {
-  const r = x % y;
-  return r + y;
-};
 
 const performOperationFor = (
   first: number | "old",
